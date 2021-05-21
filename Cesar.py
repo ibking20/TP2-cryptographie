@@ -9,13 +9,13 @@ def genKey():
   return randrange(1,25)
 
 def decalage(key):
-  i=(25-key)
+  i=0
   j=key
   t=str()
-  while j < 25-key:
+  while j < 26:
     t+= alphabet[j]
     j+=1
-  while i < 26:
+  while i < key:
     t+= alphabet[i]
     i+=1
   return t
