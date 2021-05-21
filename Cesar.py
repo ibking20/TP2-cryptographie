@@ -10,14 +10,14 @@ def genKey():
 
 def decalage(key):
   i=(25-key)
-  j=0
+  j=key
   t=str()
-  while i < 26:
-    t+= alphabet[i]
-    i+=1
   while j < 25-key:
     t+= alphabet[j]
     j+=1
+  while i < 26:
+    t+= alphabet[i]
+    i+=1
   return t
 
 def cypher(mot):
